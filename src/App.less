@@ -1,0 +1,573 @@
+@import '~antd/lib/style/themes/default.less';
+body {
+  background: #f0f2f5;
+}
+.i2-container {
+  padding: 8px 16px;
+  min-height: calc(100vh - 400px) !important;
+  background: #f0f2f5;
+}
+
+.i2-page-load {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+.i2-home {
+  .antd-pro-page-header-title {
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    min-height: 70px;
+  }
+}
+.i2-home-tabs {
+  .ant-tabs-nav-container {
+    margin-top: -12px;
+  }
+}
+.i2-card-page {
+  // min-height: calc(100vh - 170px);
+  // height: 100%;
+  .ant-card-body {
+    -ms-overflow-style: none;
+    padding: 8px 8px !important;
+  }
+
+  .i2-card-toolbar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px; 
+    span {
+      max-height: 32px;
+    }
+    .i2-card-toolbar-right {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+.i2-home-card {
+  .ant-card-body {
+    -ms-overflow-style: none;
+    padding: 0 !important;
+  }
+  .ant-table {
+    margin: -1px !important;
+  }
+}
+.i2-small-card-page {
+  position: relative;
+  margin-bottom: 10px !important;
+  .ant-card-body {
+    padding: 10px 26px !important;
+    .ant-divider-horizontal {
+      margin: 12px 0 !important;
+    }
+  }
+  .i2-card-toolbar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.i2-card-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000
+}
+.i2-table-operator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.i2-report-table {
+  .ant-table-thead {
+    tr {
+      line-height: 1.2em;
+    }
+  }
+  .ant-table-body {
+    margin: 0 !important
+  }
+  .ant-table-footer {
+    padding: 10px 0 10px 9px;
+  }
+}
+.i2-fixed-page-heard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 32px 0 32px;
+  width: 100%;
+  box-shadow: 0 1px 4px #ddd;
+  z-index: 10;
+  
+  .antd-pro-page-header-title {
+    margin-bottom: 2px;
+  }
+}
+.i2-fixed-table {
+  .ant-table .ant-table-thead tr {
+    height: 54px !important;
+  }
+}
+.i2-table .ant-table-footer {
+  padding: 0;
+  border-top: none;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+// ant Table 样式定义
+.ant-table {
+  .ant-table-column-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+    color: rgba(74, 74, 74, 0.85);
+  }
+  .ant-table-tbody, .tr, .td {
+    font-size: 12px;
+    line-height: 1.83;
+    color: #4a4a4a;
+  }
+  // table 强制换行
+  th.column-break,
+  td.column-break {
+    word-break: break-all
+  }
+
+  th.column-money,
+  td.column-money {
+    text-align: right !important;
+  }
+
+  .column-sort {
+    background: rgba(0, 0, 0, 0.01);
+  }
+
+  .column-num {
+    text-align: center;
+  }
+
+  .i2-column-tag {
+    white-space: normal !important
+  }
+
+}
+// ant From 样式定义
+.i2-Form {
+  .ant-form-item{
+    margin-bottom: 10px
+  }
+}
+.i2-worktime-Form {
+  .ant-form-item {
+    margin: 0
+  }
+}
+// ant Tag 样式定义
+.i2-tagBottom {
+  margin-bottom: 5px;
+}
+
+// i2-link-button
+.i2-link-btn {
+  padding: 0;
+  font-size: 14px;
+  color: @btn-default-color;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  .anticon {
+    margin-right: 4px;
+  }
+
+  &:hover {
+    color: fade(@btn-default-color, 80%);
+  }
+
+  &[type="primary"] {
+    color: @btn-primary-bg;
+
+    &:hover {
+      color: fade(@btn-primary-bg, 80%);
+    }
+  }
+
+  &[type="danger"] {
+    color: @btn-danger-color;
+
+    &:hover {
+      color: fade(@btn-danger-color, 80%);
+    }
+  }
+
+  &[disabled] {
+    color: @disabled-color;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+// basscss
+.h5 {
+  font-size: 12px;
+}
+
+.gray-color {
+  color: rgba(0,0,0,.45);
+}
+
+// reset antd style
+.ant-modal-body,
+.ant-drawer {
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .ant-form-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.i2-range-picker {
+  display: inline-block;
+  position: relative;
+  margin-right: 16px;
+  width: 240px;
+
+  .help-msg {
+    display: none;
+  }
+
+  &.error .help-msg {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    font-size: 12px;
+    color: #f5222d;
+    line-height: 1;
+  }
+}
+
+
+.column-status0 {
+  color: #ffa940;
+}
+.column-status1 {
+  color: #8c8c8c;
+}
+.column-status2 {
+  color: #e02020;
+}
+.column-status3 {
+  color: #0D3D5F;
+}
+.column-status4 {
+  color: #00b38a;
+}
+.column-status4-b {
+  background-color: #00b38a;
+}
+.column-null {
+  color: #e8e8e8 !important;
+}
+.column-kue {
+  color: #bfbfbf
+}
+.column-money {
+  text-align: right;
+}
+
+.i2-app-toolbar {
+  display: flex;
+  margin-bottom: 16px;
+
+  .toolbar-btns {
+    margin-left: auto;
+  }
+
+  .toolbar-mode {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.reportsPosition {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.items-baseline {
+  align-items: baseline
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  /* 1 */
+  min-height: 0;
+  /* 1 */
+}
+
+.flex-none {
+  flex: none
+}
+
+.i2-reports-Row {
+  .ant-col-24 {
+    border-bottom: 1px solid #f5f5f5
+  }
+}
+
+.customerTableTitle {
+  font-weight: bold;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.w-space{
+  white-space: nowrap;
+}
+
+.i2-vacation-page {
+  .ant-fullcalendar-fullscreen {
+    background-color: #fff;
+  }
+  .ant-fullcalendar-header > .ant-radio-group {
+    display: none;
+  }
+
+  .ant-tag {
+    margin-top: 4px;
+    margin-right: 0;
+  }
+}
+
+.i2-table-fixed {
+  display: none;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.6s;
+
+  &.visible {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 26px;
+    visibility: visible;
+  }
+
+  table {
+    width: 100%;
+  }
+  .ant-table-thead > tr:first-child > th:last-child {
+    border-right: none;
+}
+  .ant-table-thead>tr>th {
+    padding: 5px 8px;
+  }
+  .ant-table-thead > tr > th {
+    border-right: 1px solid #e8e8e8;
+}
+}
+.i2-table-title {
+  color: @heading-color;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.i2-profit {
+  padding: 0 2px;
+  background: #fafafa;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.project-list-and {
+  .ant-table-small > .ant-table-content > .ant-table-body {
+    margin: 0 !important;
+  }
+  .ant-table-footer {
+    border-right: none !important;
+  }
+}
+
+.ouput-data-title {
+  display: flex;
+
+  .year {
+    flex: 1;
+  }
+
+  .extra {
+    width: 'auto';
+    margin-right: 10px;
+  }
+}
+
+.i2-drawer-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: right;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.i2-pro-heard {
+  .antd-pro-description-list-term {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+  }
+  .antd-pro-description-list-term::after {
+    display: none
+  }
+  .antd-pro-description-list-detail {
+    color: rgba(0, 0, 0, 0.85);
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+    font-size: 22px;
+    margin-right: 32px;
+    margin-bottom: 10px;
+  }
+  .antd-pro-page-header-extraContent {
+    min-width: 470px;
+    margin-left: 20px;
+  }
+}
+
+.i2-projectCode {
+  position: relative;
+
+  .i2-projectCode-icon {
+    position: absolute;
+    left: -8px;
+  }
+  .i2-projectCode-icon-s2 {
+    position: absolute;
+    left: -20px;
+  }
+  .ant-row {
+    margin-left: 11px
+  }
+}
+
+.i2-projectCode-text {
+  padding: 0 0 0 10px ;
+}
+
+// basscss
+.center {
+  text-align: center;
+}
+
+.py1 {
+  padding: 16px 0;
+}
+
+.flex {
+  display: flex
+}
+
+.i2-hdd-drawer-handler {
+  position: fixed;
+  bottom: 155px;
+  background: @primary-color;
+  width: 48px;
+  height: 48px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+}
+
+.i2-Tag {
+  line-height: 14px !important;
+  font-size: 10px
+}
+
+.custom-tooltip {
+  position: absolute;
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.96);
+  color: #646464;
+  height: auto;
+  border-radius: 3px;
+  font-size: 13px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 10px #aeaeae;
+}
+
+.custom-tooltip-title {
+  margin: 10px 8px 10px 12px;
+  padding-bottom: 8px;
+  font-size: 12px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #e9e9e9;
+}
+
+.custom-tooltip-value {
+  display: flex;
+  margin: 8px;
+  font-size: 12px;
+  text-align: left;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #e9e9e9
+}
+.i2FootLaber {
+  font-size: 14px;
+  font-weight: 500;
+}
+ .i2-marginTB-10 {
+  margin: 10px 0;
+ }
+.i2-marginBottom-32 {
+  margin-bottom: -32px;
+}
+.i2-marginBottom8 {
+  margin-bottom: 8px;
+}
+
+.i2-tooltip-x {
+  .ant-tooltip{
+    left: 510px !important;
+  }
+}
