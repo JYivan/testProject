@@ -1,6 +1,6 @@
 {
   "name": "i-antd",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "i-antd",
   "author": "ivan.yang <ivan@i2mago.com>",
   "homepage": "https://github.com/JYivan/testProject",
@@ -43,6 +43,7 @@
     "fs-extra": "7.0.0",
     "fundebug-javascript": "^1.4.0",
     "gaze": "^1.1.3",
+    "history": "^4.10.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "i-antd": "^1.0.1",
     "identity-obj-proxy": "3.0.0",
