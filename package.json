@@ -1,9 +1,11 @@
 {
   "name": "i-antd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "i-antd",
   "author": "ivan.yang <ivan@i2mago.com>",
-  "private": true,
+  "homepage": "https://github.com/JYivan/testProject",
+  "private": false,
+  "main": "src/index.js",
   "dependencies": {
     "@babel/core": "^7.5.5",
     "@svgr/webpack": "2.4.1",
