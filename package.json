@@ -11,7 +11,7 @@
     "@svgr/webpack": "2.4.1",
     "ant-design-pro": "^2.3.1",
     "antd": "3.26.15",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
